@@ -1,355 +1,54 @@
-
-<!DOCTYPE html>
-
+<!-- ======================= index.html ======================= -->
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="AFAQ SOLAR ENERGY SOLUTIONS - شركة آفاق لحلول الطاقة الشمسية">
-    <title>AFAQ | ASES</title>
-    
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Tajawal:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>afaq solar energy solutions - ases</title>
+  <link rel="icon" href="ases/images/icon.jpg" />
+  <link rel="stylesheet" href="ases/css/style.css" />
 </head>
-<body>
+<body class="light">
 
-    <a href="https://wa.me/201272668711" class="float-whatsapp" target="_blank">
-        <i class="fab fa-whatsapp"></i>
-    </a>
-
-    <nav class="navbar">
-        <div class="container nav-content">
-            <div class="logo">
-                <img src="images/logo.png" alt="AFAQ Logo">
-            </div>
-<ul class="nav-links">
-    <li><a href="#hero" data-i18n="nav_home">الرئيسية</a></li>
-    <li><a href="#about" data-i18n="nav_about">من نحن</a></li>
-    <li><a href="#solutions" data-i18n="nav_solutions">حلولنا</a></li>
-    <li><a href="#products" data-i18n="nav_products">منتجاتنا</a></li>
-    <li><a href="#gallery" data-i18n="nav_gallery">أعمالنا</a></li>
-    <li><a href="#brochure" data-i18n="nav_brochure">بروشورات</a></li>
-    <li><a href="#calculator" data-i18n="nav_calc">حاسبة النظام</a></li>
-    <li><a href="#contact" data-i18n="nav_contact">تواصل معنا</a></li>
-</ul>
-            <div class="nav-controls">
-                <button id="lang-toggle" class="btn-control">EN</button>
-                <button id="theme-toggle" class="btn-control"><i class="fas fa-moon"></i></button>
-                <div class="burger">
-                    <div class="line1"></div>
-                    <div class="line2"></div>
-                    <div class="line3"></div>
-                </div>
-            </div>
-        </div>
+<header class="navbar">
+  <div class="nav-container">
+    <img src="ases/images/logow.jpg" class="logo" id="site-logo" />
+    <nav class="nav-links">
+      <a href="#home">الرئيسية</a>
+      <a href="#about">من نحن</a>
+      <a href="#brochures">البروشورات</a>
     </nav>
-
-    <header id="hero" class="hero-section">
-        <div class="hero-overlay"></div>
-        <div class="container hero-content">
-            <h1 data-i18n="hero_title">شــركـة آفــاق لـحــلـــول الـطــاقـــة</h1>
-            <p class="hero-subtitle" data-i18n="hero_slogan1">الطاقة النظيفة.. استثمار ذكي لمستقبل مستدام</p>
-            <p class="hero-desc" data-i18n="hero_slogan2">نقدم أحدث تكنولوجيا الطاقة الشمسية الكندية (UGP) لضمان أعلى كفاءة وتوفير.</p>
-            <a href="#contact" class="btn-main" data-i18n="btn_contact">اطلب استشارة مجانية</a>
-        </div>
-    </header>
-
-    <section id="stats" class="stats-section">
-        <div class="container stats-grid">
-            <div class="stat-item">
-                <i class="fas fa-project-diagram"></i>
-                <h3 class="counter" data-target="250">0</h3>
-                <p data-i18n="stat_projects">مشاريع منفذة</p>
-            </div>
-            <div class="stat-item">
-                <i class="fas fa-bolt"></i>
-                <h3 class="counter" data-target="5000">0</h3>
-                <p data-i18n="stat_power">قدرة مركبة (KW)</p>
-            </div>
-            <div class="stat-item">
-                <i class="fas fa-smile"></i>
-                <h3 class="counter" data-target="99">0</h3>
-                <p data-i18n="stat_satisfaction">نسبة رضا العملاء %</p>
-            </div>
-        </div>
-    </section>
-
-<section id="about" class="section-padding">
-    <div class="container">
-        <h2 class="section-title" data-i18n="title_about">من نحن</h2>
-        <div class="about-grid">
-            <div class="about-text">
-                <p class="about-p" data-i18n="about_main_desc">
-                    تأسست شركة آفاق لحلول الطاقة الشمسية ASES في مدينة الإسكندرية – جمهورية مصر العربية عام 2025...
-                </p>
-
-                <h3 class="about-h3" data-i18n="about_exp_title">خبراتنا.</h3>
-                <div class="about-list" data-i18n="about_exp_list">
-                    • يضم فريقنا خبراء عملوا في مجال الطاقة المتجددة منذ عام 2008.<br>
-                    • لدينا شركاء يُعتبرون من أوائل مطوّري مشاريع الطاقة الشمسية حول العالم منذ 1995.<br>
-                    • نفذ خبراؤنا وشركاؤنا مشاريع كبرى وعملاقة في عدة دول حول العالم.
-                </div>
-
-                <h3 class="about-h3" data-i18n="about_serv_title">خدماتنا</h3>
-                <div class="about-list" data-i18n="about_serv_list">
-                    نقدم خدمات شاملة ومتكاملة تشمل:<br>
-                    • دراسة وتصميم أنظمة الطاقة البديلة.<br>
-                    • توريد وتركيب وتشغيل أنظمة الطاقة الشمسية.<br>
-                    • الفحص والاختبار والاعتماد الفني للمشاريع.<br>
-                    • الاستشارات الهندسية في جميع نواحي الطاقة البديلة.<br>
-                    • حلول توفير الطاقة للمنازل والمزارع والمصانع والمدن والمشاريع الحكومية العملاقة.
-                </div>
-
-                <h3 class="about-h3" data-i18n="about_fields_title">مجالات عملنا</h3>
-                <div class="about-list" data-i18n="about_fields_list">
-                    نعمل في جميع أنظمة الطاقة المتجددة:<br>
-                    • ON-GRID الأنظمة المرتبطة بالشبكة.<br>
-                    • OFF-GRID الأنظمة المنفصلة عن الشبكة.<br>
-                    • HYBRID SYSTEMS الأنظمة الهجينة.<br>
-                    • ON-TIME SYSTEMS أنظمة التشغيل الفوري.
-                </div>
-
-                <h3 class="about-h3" data-i18n="about_ugp_title">وكالاتنا وشركاؤنا UGP</h3>
-                <p class="about-p" data-i18n="about_ugp_desc">لدينا شبكة من الشركاء الاستراتيجيين في عدة دول لتوفير أحدث تقنيات الطاقة المتجددة.</p>
-
-                <h3 class="about-h3" data-i18n="about_vision_title">رؤيتنا</h3>
-                <p class="about-p" data-i18n="about_vision_desc">أن نكون الشركة الأبرز في المنطقة في تقديم حلول الطاقة المتجددة، وأن نساهم في دفع عجلة التحول العالمي نحو الطاقة النظيفة عبر مشاريع مستدامة وبجودة عالية.</p>
-
-                <h3 class="about-h3" data-i18n="about_goals_title">أهدافنا</h3>
-                <div class="about-list" data-i18n="about_goals_list">
-                    • نشر ثقافة الطاقة النظيفة وتقليل الاعتماد على مصادر الوقود التقليدية.<br>
-                    • تنفيذ مشاريع متكاملة تدعم التنمية المستدامة.<br>
-                    • توفير حلول طاقة اقتصادية وآمنة وذات موثوقية عالية.<br>
-                    • توسيع شبكة العلاقات العالمية مع أهم المصنعين والمطورين.
-                </div>
-
-                <h3 class="about-h3" data-i18n="about_dir_title">توجهنا</h3>
-                <p class="about-p" data-i18n="about_dir_desc">نعتمد أعلى معايير الجودة والاحترافية في جميع مراحل العمل، مع التركيز على الابتكار الهندسي والكفاءة التشغيلية لتحقيق أفضل النتائج.</p>
-
-                <ul class="about-features">
-                    <li><i class="fas fa-check-circle"></i> <span data-i18n="feat_1">شريك معتمد لشركة UGP العالمية (تكنولوجيا HJT).</span></li>
-                    <li><i class="fas fa-check-circle"></i> <span data-i18n="feat_2">ضمان حقيقي وفريق هندسي متخصص.</span></li>
-                    <li><i class="fas fa-check-circle"></i> <span data-i18n="feat_3">خدمة ما بعد البيع وصيانة دورية.</span></li>
-                </ul>
-            </div>
-            <div class="about-image">
-                <div class="img-3d-frame">
-                    <img src="images/about/team.jpg" alt="About AFAQ">
-                    <img src="images/about/team1.jpg" alt="About AFAQ">
-                </div>
-            </div>
-        </div>
+    <div class="nav-actions">
+      <button id="theme-toggle">🌙</button>
     </div>
+  </div>
+</header>
+
+<section id="home" class="hero" style="background-image:url('ases/images/back ground/1.png')">
+  <h1>AFAQ SOLAR ENERGY SOLUTIONS - ASES</h1>
 </section>
 
-    <section id="solutions" class="section-padding bg-light">
-        <div class="container">
-            <h2 class="section-title" data-i18n="title_solutions">حلول الطاقة</h2>
-            <div class="solutions-grid">
-                <div class="solution-card">
-                    <div class="icon-3d">
-                        <i class="fas fa-home"></i>
-                    </div>
-                    <h3 data-i18n="sol_home">أنظمة منزلية</h3>
-                    <p data-i18n="sol_home_desc">تخلص من فواتير الكهرباء وحقق استقلالاً تاماً.</p>
-                </div>
-                <div class="solution-card">
-                    <div class="icon-3d">
-                        <i class="fas fa-industry"></i>
-                    </div>
-                    <h3 data-i18n="sol_commercial">أنظمة تجارية</h3>
-                    <p data-i18n="sol_commercial_desc">حلول ذكية للمصانع والشركات لتقليل التكلفة التشغيلية.</p>
-                </div>
-                <div class="solution-card">
-                    <div class="icon-3d">
-                        <i class="fas fa-tractor"></i>
-                    </div>
-                    <h3 data-i18n="sol_agriculture">أنظمة زراعية</h3>
-                    <p data-i18n="sol_agriculture_desc">ضخ المياه بالطاقة الشمسية بأعلى كفاءة.</p>
-                </div>
-                 <div class="solution-card">
-                    <div class="icon-3d">
-                        <i class="fas fa-charging-station"></i>
-                    </div>
-                    <h3 data-i18n="sol_ev">شحن سيارات</h3>
-                    <p data-i18n="sol_ev_desc">محطات شحن السيارات الكهربائية بالطاقة النظيفة.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="calculator" class="section-padding">
-        <div class="container">
-            <h2 class="section-title" data-i18n="title_calc">حاسبة النظام الشمسي</h2>
-            <div class="calc-container">
-                <div class="calc-input">
-                    <label data-i18n="lbl_consumption">أدخل معدل استهلاكك الشهري (كيلو واط):</label>
-                    <input type="number" id="monthly-consumption" value="500">
-                    <button onclick="calculateSolar()" class="btn-main" data-i18n="btn_calc">احسب الآن</button>
-                    <p class="note" data-i18n="calc_note">* الحساب مبني على ألواح UGP بقدرة 600 واط وتكنولوجيا HJT.</p>
-                </div>
-                <div class="calc-result" id="calc-result" style="display:none;">
-                    <div class="result-box">
-                        <h4 data-i18n="res_size">حجم النظام المقترح</h4>
-                        <span id="res-kw">0</span> KW
-                    </div>
-                    <div class="result-box">
-                        <h4 data-i18n="res_panels">عدد الألواح</h4>
-                        <span id="res-panels">0</span> <span data-i18n="panels_unit">لوح</span>
-                    </div>
-                    <div class="result-box">
-                        <h4 data-i18n="res_area">المساحة المطلوبة</h4>
-                        <span id="res-area">0</span> m²
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="products" class="section-padding bg-light">
-        <div class="container">
-            <h2 class="section-title" data-i18n="title_products">منتجاتنا</h2>
-            
-            <div class="filter-btns">
-                <button class="filter-btn active" onclick="filterProducts('all')" data-i18n="filter_all">الكل</button>
-                <button class="filter-btn" onclick="filterProducts('panels')" data-i18n="filter_panels">ألواح شمسية</button>
-                <button class="filter-btn" onclick="filterProducts('inverters')" data-i18n="filter_inverters">إنفرترات</button>
-                <button class="filter-btn" onclick="filterProducts('batteries')" data-i18n="filter_batteries">بطاريات</button>
-            </div>
-
-            <div class="products-grid">
-                <div class="product-card" data-category="panels">
-                    <div class="prod-img-box">
-                        <img src="images/products/panels/UGP 750W.png" alt="Panel" onclick="openLightbox(this)" onerror="this.src='https://via.placeholder.com/300?text=Product'">
-                    </div>
-                    <div class="prod-info">
-                        <h3>UGP 600W HJT</h3>
-                        <p data-i18n="prod_desc_1">أحدث تكنولوجيا كندية، كفاءة عالية في  الحرارة المرتفعة.</p>
-                    </div>
-                </div>
-                <div class="product-card" data-category="inverters">
-                    <div class="prod-img-box">
-                        <img src="images/products/inverters/UGP INVERTER.png" alt="Inverter" onclick="openLightbox(this)" onerror="this.src='https://via.placeholder.com/300?text=Product'">
-                    </div>
-                    <div class="prod-info">
-                        <h3>Hybrid Inverter 5KW</h3>
-                        <p data-i18n="prod_desc_2">محول هجين ذكي يدعم الشبكة والبطاريات.</p>
-                    </div>
-                </div>
-
-                    <div class="prod-img-box">
-                        <img src="images/products/BATTERY/BAT400Ah-8000CY.png" alt="BATTERY" onclick="openLightbox(this)" onerror="this.src='https://via.placeholder.com/300?text=Product'">
-                    </div>
-                    <div class="prod-info">
-                        <h3>UGB BATTERY 20KWh</h3>
-                        <p data-i18n="prod_desc_2">بطاريات UGP  العالمية 20KWh / 8000CYCLE عمر افتراضي يتعدى 20 عام.</p>
-                    </div>
-                
-
-
-                    <div class="prod-img-box">
-                        <img src="images/products/BATTERY/BAT500Ah-8000CY.png" alt="BATTERY" onclick="openLightbox(this)" onerror="this.src='https://via.placeholder.com/300?text=Product'">
-                    </div>
-                    <div class="prod-info">
-                        <h3>UGB BATTERY 25KWh</h3>
-                        <p data-i18n="prod_desc_2">بطاريات UGP  العالمية 25KWh / 8000CYCLE عمر افتراضي يتعدى 20 عام.</p>
-                    </div>
- 
-                    <div class="prod-img-box">
-                        <img src="images/products/BATTERY/BAT600Ah-8000CY.png" alt="BATTERY" onclick="openLightbox(this)" onerror="this.src='https://via.placeholder.com/300?text=Product'">
-                    </div>
-                    <div class="prod-info">
-                        <h3>UGB BATTERY 30KWh</h3>
-                        <p data-i18n="prod_desc_2">بطاريات UGP  العالمية 30KWh / 8000CYCLE عمر افتراضي يتعدى 20 عام.</p>
-                    </div>               
-
-
-                 </div>
-        </div>
-    </section>
-
-    <section id="gallery" class="section-padding">
-        <div class="container">
-            <h2 class="section-title" data-i18n="title_gallery">معرض الأعمال</h2>
-            <div class="gallery-grid">
-                <img src="images/projects/1/1.jpg" class="gallery-img" onclick="openLightbox(this)" onerror="this.src='https://via.placeholder.com/400?text=Project+1'">
-                <img src="images/projects/1/2.jpg" class="gallery-img" onclick="openLightbox(this)" onerror="this.src='https://via.placeholder.com/400?text=Project+2'">
-                <img src="images/projects/1/3.jpg" class="gallery-img" onclick="openLightbox(this)" onerror="this.src='https://via.placeholder.com/400?text=Project+3'">
-
-                <img src="images/projects/1/4.jpg" class="gallery-img" onclick="openLightbox(this)" onerror="this.src='https://via.placeholder.com/400?text=Project+1'">
-                <img src="images/projects/1/5.jpg" class="gallery-img" onclick="openLightbox(this)" onerror="this.src='https://via.placeholder.com/400?text=Project+2'">
-                <img src="images/projects/1/60.jpg" class="gallery-img" onclick="openLightbox(this)" onerror="this.src='https://via.placeholder.com/400?text=Project+3'">
-
-                <img src="images/projects/1/61.jpg" class="gallery-img" onclick="openLightbox(this)" onerror="this.src='https://via.placeholder.com/400?text=Project+1'">
-                <img src="images/projects/1/62.jpg" class="gallery-img" onclick="openLightbox(this)" onerror="this.src='https://via.placeholder.com/400?text=Project+2'">
-                <img src="images/projects/1/70.jpg" class="gallery-img" onclick="openLightbox(this)" onerror="this.src='https://via.placeholder.com/400?text=Project+3'">
-                <img src="images/projects/1/71.jpg" class="gallery-img" onclick="openLightbox(this)" onerror="this.src='https://via.placeholder.com/400?text=Project+3'">
-
-            </div>
-        </div>
-    </section>
-
-
-
-<section id="brochure" class="section-padding bg-light">
-    <div class="container">
-        <h2 class="section-title" data-i18n="title_brochure" style="text-align: center; font-size: 35px;">بروشورات الشركة</h2>
-        
-        <div class="brochure-grid">
-            <img src="images/brochure/1.jpeg" class="gallery-img" onclick="openLightbox(this)" alt="Brochure 1">
-            <img src="images/brochure/2.jpeg" class="gallery-img" onclick="openLightbox(this)" alt="Brochure 2">
-            <img src="images/brochure/3.jpeg" class="gallery-img" onclick="openLightbox(this)" alt="Brochure 3">
-            <img src="images/brochure/4.jpeg" class="gallery-img" onclick="openLightbox(this)" alt="Brochure 4">
-            <img src="images/brochure/5.jpeg" class="gallery-img" onclick="openLightbox(this)" alt="Brochure 1">
-            <img src="images/brochure/6.jpeg" class="gallery-img" onclick="openLightbox(this)" alt="Brochure 2">
-            <img src="images/brochure/7.jpeg" class="gallery-img" onclick="openLightbox(this)" alt="Brochure 3">
-            <img src="images/brochure/8.jpeg" class="gallery-img" onclick="openLightbox(this)" alt="Brochure 4">
-        </div>
-    </div>
+<section id="about" class="about">
+  <h2>من نحن</h2>
+  <div class="about-text"></div>
 </section>
 
-
-
-    <section id="contact" class="section-padding">
-        <div class="container contact-wrapper">
-            <h2 class="section-title" data-i18n="title_contact">تواصل معنا</h2>
-            <div class="contact-content">
-                <div class="contact-info">
-                    <div class="info-item">
-                        <i class="fas fa-phone"></i>
-                        <span>00201272668711</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-envelope"></i>
-                        <span>INFO@AFAQEGY.COM</span>
-                    </div>
-                    <div class="info-item">
-                        <i class="fas fa-map-marker-alt"></i>
-                        <span data-i18n="address">جمهورية مصر العربية - الاسكندرية</span>
-                    </div>
-                </div>
-                <form class="contact-form">
-                    <input type="text" placeholder="الاسم" data-i18n-ph="ph_name">
-                    <input type="text" placeholder="رقم الهاتف" data-i18n-ph="ph_phone">
-                    <textarea placeholder="رسالتك" data-i18n-ph="ph_msg"></textarea>
-                    <button type="submit" class="btn-main" data-i18n="btn_send">إرسال</button>
-                </form>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 AFAQ SOLAR ENERGY SOLUTIONS (ASES). All Rights Reserved.</p>
-        </div>
-    </footer>
-
-    <div id="lightbox" class="lightbox" onclick="closeLightbox()">
-        <span class="close-lightbox">&times;</span>
-        <img class="lightbox-content" id="lightbox-img">
+<section id="brochures" class="brochures">
+  <h2>البروشورات</h2>
+  <div class="slider-wrapper">
+    <button class="slide-btn prev">❮</button>
+    <div class="slider" id="brochureSlider">
+      <img src="ases/images/brochures/1.jpg" />
+      <img src="ases/images/brochures/2.jpg" />
+      <img src="ases/images/brochures/3.jpg" />
+      <img src="ases/images/brochures/4.jpg" />
     </div>
+    <button class="slide-btn next">❯</button>
+  </div>
+</section>
 
-    <script src="js/app.js"></script>
+<script src="ases/js/app.js"></script>
 </body>
 </html>
+</html>
+
