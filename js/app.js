@@ -18,6 +18,9 @@ const translations = {
         stat_satisfaction: "نسبة رضا العملاء %",
         title_about: "من نحن",
         about_desc: "شركة آفاق لحلول الطاقة الشمسية (ASES) هي شركة رائدة في مجال الطاقة المتجددة في مصر. نحن نهدف إلى تقديم حلول طاقة ذكية ومستدامة.",
+        feat_1: "شريك معتمد لشركة UGP العالمية (تكنولوجيا HJT).",
+        feat_2: "ضمان حقيقي وفريق هندسي متخصص.",
+        feat_3: "خدمة ما بعد البيع وصيانة دورية.",
         title_solutions: "حلول الطاقة",
         sol_home: "أنظمة منزلية",
         sol_home_desc: "تخلص من فواتير الكهرباء وحقق استقلالاً تاماً.",
@@ -43,33 +46,13 @@ const translations = {
         prod_desc_1: "أحدث تكنولوجيا كندية، كفاءة عالية.",
         prod_desc_2: "محول هجين ذكي يدعم الشبكة والبطاريات.",
         title_gallery: "معرض الأعمال",
+        title_brochure: "كتالوج الشركة",
         title_contact: "تواصل معنا",
         address: "جمهورية مصر العربية - الاسكندرية",
         btn_send: "إرسال",
         ph_name: "الاسم",
         ph_phone: "رقم الهاتف",
-        ph_msg: "رسالتك",
-        
-        // قسم من نحن (النص الكامل)
-        about_main_desc: "تأسست شركة آفاق لحلول الطاقة الشمسية ASES في مدينة الإسكندرية – جمهورية مصر العربية عام 2025، لتكون إحدى الشركات الرائدة في قطاع الطاقة المتجددة في المنطقة. تعتمد الشركة على خبرات هندسية متقدمة وفريق عمل متخصص يمتلك خبرة تمتد لأكثر من 17 عامًا في مجال تصميم وتنفيذ وتشغيل أنظمة الطاقة البديلة.",
-        about_exp_title: "خبراتنا.",
-        about_exp_list: "• يضم فريقنا خبراء عملوا في مجال الطاقة المتجددة منذ عام 2008.<br>• لدينا شركاء يُعتبرون من أوائل مطوّري مشاريع الطاقة الشمسية حول العالم منذ 1995.<br>• نفذ خبراؤنا وشركاؤنا مشاريع كبرى وعملاقة في عدة دول حول العالم.",
-        about_serv_title: "خدماتنا",
-        about_serv_list: "نقدم خدمات شاملة ومتكاملة تشمل:<br>• دراسة وتصميم أنظمة الطاقة البديلة.<br>• توريد وتركيب وتشغيل أنظمة الطاقة الشمسية.<br>• الفحص والاختبار والاعتماد الفني للمشاريع.<br>• الاستشارات الهندسية في جميع نواحي الطاقة البديلة.<br>• حلول توفير الطاقة للمنازل والمزارع والمصانع والمدن والمشاريع الحكومية العملاقة.",
-        about_fields_title: "مجالات عملنا",
-        about_fields_list: "نعمل في جميع أنظمة الطاقة المتجددة:<br>• ON-GRID الأنظمة المرتبطة بالشبكة.<br>• OFF-GRID الأنظمة المنفصلة عن الشبكة.<br>• HYBRID SYSTEMS الأنظمة الهجينة.<br>• ON-TIME SYSTEMS أنظمة التشغيل الفوري.",
-        about_ugp_title: "وكالاتنا وشركاؤنا UGP",
-        about_ugp_desc: "لدينا شبكة من الشركاء الاستراتيجيين في عدة دول لتوفير أحدث تقنيات الطاقة المتجددة.",
-        about_vision_title: "رؤيتنا",
-        about_vision_desc: "أن نكون الشركة الأبرز في المنطقة في تقديم حلول الطاقة المتجددة، وأن نساهم في دفع عجلة التحول العالمي نحو الطاقة النظيفة عبر مشاريع مستدامة وبجودة عالية.",
-        about_goals_title: "أهدافنا",
-        about_goals_list: "• نشر ثقافة الطاقة النظيفة وتقليل الاعتماد على مصادر الوقود التقليدية.<br>• تنفيذ مشاريع متكاملة تدعم التنمية المستدامة.<br>• توفير حلول طاقة اقتصادية وآمنة وذات موثوقية عالية.<br>• توسيع شبكة العلاقات العالمية مع أهم المصنعين والمطورين.",
-        about_dir_title: "توجهنا",
-        about_dir_desc: "نعتمد أعلى معايير الجودة والاحترافية في جميع مراحل العمل، مع التركيز على الابتكار الهندسي والكفاءة التشغيلية لتحقيق أفضل النتائج.",
-        feat_1: "شريك معتمد لشركة UGP العالمية (تكنولوجيا HJT).",
-        feat_2: "ضمان حقيقي وفريق هندسي متخصص.",
-        feat_3: "خدمة ما بعد البيع وصيانة دورية.",
-        title_brochure: "بروشورات الشركة"
+        ph_msg: "رسالتك"
     },
     en: {
         nav_home: "Home",
@@ -89,6 +72,9 @@ const translations = {
         stat_satisfaction: "Customer Satisfaction %",
         title_about: "About Us",
         about_desc: "AFAQ Solar Energy Solutions (ASES) is a leader in renewable energy in Egypt. We aim to provide smart and sustainable energy solutions.",
+        feat_1: "Authorized partner of UGP Global (HJT Technology).",
+        feat_2: "Real warranty and specialized engineering team.",
+        feat_3: "After-sales service and periodic maintenance.",
         title_solutions: "Energy Solutions",
         sol_home: "Residential Systems",
         sol_home_desc: "Eliminate electricity bills and achieve independence.",
@@ -114,66 +100,15 @@ const translations = {
         prod_desc_1: "Latest Canadian technology, high efficiency.",
         prod_desc_2: "Smart hybrid inverter supports grid & battery.",
         title_gallery: "Gallery",
+        title_brochure: "Brochure",
         title_contact: "Contact Us",
         address: "Alexandria, Egypt",
         btn_send: "Send",
         ph_name: "Name",
         ph_phone: "Phone Number",
-        ph_msg: "Your Message",
-
-        // About Us Section (Professional Translation)
-        about_main_desc: "AFAQ Solar Energy Solutions (ASES) was established in Alexandria, Egypt in 2025, to become a leading company in the renewable energy sector. The company relies on advanced engineering expertise and a specialized team with over 17 years of experience in designing, implementing, and operating alternative energy systems.",
-        about_exp_title: "Our Expertise.",
-        about_exp_list: "• Our team includes experts who have worked in renewable energy since 2008.<br>• We have partners recognized as pioneer developers of solar energy projects worldwide since 1995.<br>• Our experts and partners have executed mega-projects in various countries globally.",
-        about_serv_title: "Our Services",
-        about_serv_list: "We provide comprehensive and integrated services including:<br>• Study and design of alternative energy systems.<br>• Supply, installation, and operation of solar systems.<br>• Technical inspection, testing, and certification.<br>• Engineering consultancy in all aspects of renewable energy.<br>• Energy-saving solutions for homes, farms, factories, cities, and giant government projects.",
-        about_fields_title: "Our Fields of Work",
-        about_fields_list: "We operate across all renewable energy systems:<br>• ON-GRID: Grid-tied systems.<br>• OFF-GRID: Standalone systems.<br>• HYBRID SYSTEMS: Combined energy solutions.<br>• ON-TIME SYSTEMS: Immediate operation systems.",
-        about_ugp_title: "Agencies & Partners (UGP)",
-        about_ugp_desc: "We have a network of strategic partners in several countries to provide the latest renewable energy technologies.",
-        about_vision_title: "Our Vision",
-        about_vision_desc: "To be the most prominent company in the region in providing renewable energy solutions, contributing to the global transition towards clean energy through sustainable, high-quality projects.",
-        about_goals_title: "Our Goals",
-        about_goals_list: "• Spreading clean energy culture and reducing reliance on traditional fuel sources.<br>• Implementing integrated projects that support sustainable development.<br>• Providing economical, safe, and highly reliable energy solutions.<br>• Expanding our global network with major manufacturers and developers.",
-        about_dir_title: "Our Approach",
-        about_dir_desc: "We adopt the highest standards of quality and professionalism in all work stages, focusing on engineering innovation and operational efficiency to achieve the best results.",
-        feat_1: "Certified Partner for UGP Global (HJT Technology).",
-        feat_2: "Genuine Warranty & Specialized Engineering Team.",
-        feat_3: "After-Sales Service & Regular Maintenance.",
-        title_brochure: "Company Brochures"
+        ph_msg: "Your Message"
     }
 };
-
-// ================= دالة تبديل اللغة (Language Switcher) =================
-function setLanguage(lang) {
-    localStorage.setItem('selectedLang', lang);
-    document.documentElement.dir = lang === 'ar' ? 'rtl' : 'ltr';
-    document.documentElement.lang = lang;
-
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-        const key = el.getAttribute('data-i18n');
-        if (translations[lang][key]) {
-            el.innerHTML = translations[lang][key];
-        }
-    });
-
-    // تحديث Placeholders
-    document.querySelectorAll('[data-i18n-ph]').forEach(el => {
-        const key = el.getAttribute('data-i18n-ph');
-        if (translations[lang][key]) {
-            el.placeholder = translations[lang][key];
-        }
-    });
-}
-
-// تشغيل عند تحميل الصفحة
-document.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('selectedLang') || 'ar';
-    setLanguage(savedLang);
-});
-
-// ربط الدالة بالنافذة لتعمل مع onclick في HTML
-window.setLanguage = setLanguage;
 
 // ================= إدارة اللغة (Language Handling) =================
 let currentLang = 'ar'; // اللغة الافتراضية
