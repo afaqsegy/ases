@@ -1,0 +1,68 @@
+/* الألوان والمتغيرات */
+:root {
+    --main-color: #f39c12;
+    --text-color: #333;
+    --bg-color: #fff;
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* التنسيق للقسم الجديد */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.about-p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.about-h3 {
+    font-size: 24px;
+    color: var(--main-color);
+    margin-top: 30px;
+    border-right: 4px solid var(--main-color);
+    padding-right: 15px;
+}
+
+.about-list {
+    line-height: 2;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+
+/* تنسيق القائمة بالإنجليزية */
+[dir="ltr"] .about-h3 {
+    border-right: none;
+    border-left: 4px solid var(--main-color);
+    padding-left: 15px;
+    padding-right: 0;
+}
+
+[dir="ltr"] .navbar {
+    flex-direction: row-reverse;
+}
+
+.lang-btn {
+    background: var(--main-color);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 5px;
+}
