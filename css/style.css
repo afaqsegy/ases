@@ -1,0 +1,753 @@
+/* ================= المتغيرات والألوان ================= */
+:root {
+    --primary-color: #b8860b; /* ذهبي فخم */
+    --secondary-color: #002347; /* كحلي عميق */
+    --accent-color: #ffcc00; /* أصفر شمسي */
+    --bg-color: #ffffff;
+    --text-color: #333333;
+    --card-bg: #f9f9f9;
+    --shadow: 0 10px 30px rgba(0,0,0,0.1);
+    --font-ar: 'Tajawal', sans-serif;
+    --font-en: 'Poppins', sans-serif;
+}
+
+/* الوضع الليلي */
+body.dark-theme {
+    --bg-color: #121212;
+    --text-color: #e0e0e0;
+    --card-bg: #1e1e1e;
+    --secondary-color: #0a1929;
+    --shadow: 0 10px 30px rgba(255,255,255,0.05);
+}
+
+/* ================= التنسيق العام ================= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* هذا الكود يجعل التنقل بين أقسام الصفحة انسيابياً جداً */
+html {
+    scroll-behavior: smooth;
+}
+
+/* اختياري: إضافة مسافة علوية عند الوصول للقسم لكي لا يختفي العنوان تحت القائمة */
+section {
+    scroll-margin-top: 60px; 
+}
+
+body {
+    font-family: var(--font-ar);
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: background 0.3s, color 0.3s;
+    overflow-x: hidden;
+}
+
+/* تنسيق اللغة الإنجليزية */
+html[lang="en"] body {
+    font-family: var(--font-en);
+}
+
+/* العناوين الفخمة */
+.section-title {
+    text-align: center;
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 3rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+body.dark-theme .section-title {
+    color: var(--primary-color);
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+    border-radius: 2px;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-padding {
+    padding: 80px 0;
+}
+
+.bg-light {
+    background-color: var(--card-bg);
+}
+
+.btn-main {
+    background: linear-gradient(45deg, var(--secondary-color), var(--primary-color));
+    color: #fff;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.btn-main:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(184, 134, 11, 0.4);
+}
+
+/* ================= Navbar ================= */
+.navbar {
+    background-color: var(--bg-color);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    padding: 15px 0;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--primary-color);
+}
+
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn-control {
+    background: none;
+    border: 1px solid var(--text-color);
+    color: var(--text-color);
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* ================= Hero Section ================= */
+.hero-section {
+    height: 90vh;
+    background: url('../images/BACK GROUND/hero-bg.jpg') no-repeat center center/cover;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: rgba(0, 35, 71, 0.7);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+    color: var(--accent-color);
+}
+
+/* ================= Stats ================= */
+.stats-section {
+    background-color: var(--primary-color);
+    color: #fff;
+    padding: 40px 0;
+}
+
+.stats-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.stat-item i {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* ================= 3D Effects & Images ================= */
+.img-3d-frame {
+    position: relative;
+    transform-style: preserve-3d;
+    transform: perspective(1000px) rotateY(-5deg);
+    transition: transform 0.5s;
+    border: 10px solid var(--bg-color);
+    box-shadow: 15px 15px 30px rgba(0,0,0,0.2);
+}
+
+.img-3d-frame:hover {
+    transform: perspective(1000px) rotateY(0deg);
+}
+
+.img-3d-frame img {
+    width: 100%;
+    display: block;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: center;
+}
+
+/* ================= Solutions (3D Icons) ================= */
+.solutions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.solution-card {
+    background: var(--bg-color);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: var(--shadow);
+    transition: transform 0.4s;
+    cursor: pointer;
+}
+
+.solution-card:hover {
+    transform: translateY(-10px);
+}
+
+.icon-3d {
+    font-size: 3rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    transition: transform 0.5s;
+    display: inline-block;
+}
+
+.solution-card:hover .icon-3d {
+    transform: rotateY(360deg) scale(1.1);
+}
+
+/* ================= Calculator ================= */
+.calc-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--card-bg);
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: var(--shadow);
+    text-align: center;
+}
+
+.calc-input input {
+    width: 100%;
+    padding: 10px;
+    margin: 15px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.result-box {
+    margin-top: 20px;
+    padding: 15px;
+    background: var(--secondary-color);
+    color: #fff;
+    border-radius: 8px;
+}
+
+.result-box span {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+/* ================= Products ================= */
+.filter-btns {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.filter-btn {
+    padding: 8px 20px;
+    margin: 5px;
+    border: 2px solid var(--primary-color);
+    background: none;
+    cursor: pointer;
+    font-weight: bold;
+    color: var(--text-color);
+    transition: 0.3s;
+}
+
+.filter-btn.active, .filter-btn:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background: var(--bg-color);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: 0.3s;
+}
+
+.prod-img-box {
+    height: 250px;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prod-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* حسب طلبك */
+    transition: transform 0.3s;
+    cursor: zoom-in;
+}
+
+.prod-info {
+    padding: 20px;
+    text-align: center;
+}
+
+/* ================= Gallery & Brochure ================= */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.gallery-img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s;
+    border: 5px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.gallery-img:hover {
+    transform: scale(1.05);
+}
+
+/* ================= Contact ================= */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.info-item i {
+    width: 40px;
+    height: 40px;
+    background: var(--primary-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin-inline-end: 15px; /* يدعم LTR و RTL */
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+/* ================= Lightbox ================= */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.9);
+    justify-content: center;
+    align-items: center;
+}
+
+.lightbox-content {
+    max-width: 90%;
+    max-height: 80vh;
+    animation: zoom 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+.close-lightbox {
+    position: absolute;
+    top: 20px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* ================= زر واتساب ================= */
+.float-whatsapp {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px; /* سيتغير تلقائيا مع اتجاه الصفحة */
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+}
+
+html[dir="rtl"] .float-whatsapp {
+    right: auto;
+    left: 40px;
+}
+
+.float-whatsapp:hover {
+    background-color: #128C7E;
+    transform: scale(1.1);
+}
+
+/* ================= Media Queries (Mobile) ================= */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none; /* يمكن تفعيل القائمة الجانبية هنا */
+    }
+    .about-grid, .contact-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .hero-content h1 {
+        font-size: 2rem;
+    }
+}
+
+.large-text {
+    font-size: 18px; /* يمكنك زيادة الرقم لتكبير الخط أكثر */
+    line-height: 1.6; /* لترك مسافة مريحة بين الأسطر */
+   /* font-weight: bold; /* إذا أردت الخط عريضاً */
+}
+
+.justify-text {
+    text-align: justify;
+    line-height: 1.8; /* مسافة بين الأسطر لراحة العين */
+}
+
+/* تنسيق خاص لعنوان البروشور */
+/*#brochure .section-title {*/
+/*    font-size: 40px !important;    /* !important تضمن تنفيذ الأمر وتخطي أي أوامر أخرى */*/
+/*    text-align: center !important;*/
+/*    width: 100%;                  /* لضمان التمركز في منتصف الحاوية */*/
+/*    display: block;               /* لضمان استجابة المحاذاة */*/
+/*    margin-bottom: 40px;          /* مسافة تحت العنوان */*/
+/*}*/
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+/* حاوية الصور: تجعلها صفا واحداً وتسمح بالتمرير يمينا ويسارا */
+.brochure-slider {
+    display: flex;
+    gap: 20px;            /* المسافة بين الصور */
+    overflow-x: auto;     /* تفعيل التمرير الأفقي */
+    padding: 20px 10px;
+    scroll-behavior: smooth;
+    scrollbar-width: thin; /* شكل شريط التمرير في متصفح فايرفوكس */
+}
+
+/* تحسين شكل شريط التمرير للمتصفحات الأخرى */
+.brochure-slider::-webkit-scrollbar {
+    height: 8px;
+}
+.brochure-slider::-webkit-scrollbar-thumb {
+    background: var(--main-color, #f39c12); /* لون شريط التمرير */
+    border-radius: 10px;
+}
+
+/* حجم البروشور (متوسط) */
+.brochure-item {
+    flex: 0 0 300px;     /* عرض ثابت لكل بروشور (300 بكسل) لجعلها متوسطة */
+    transition: transform 0.3s ease;
+}
+
+.brochure-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;  /* زوايا دائرية للفخامة */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    cursor: pointer;      /* تغيير شكل الماوس ليدل على إمكانية الضغط */
+}
+
+/* تأثير عند تمرير الماوس */
+.brochure-item:hover {
+    transform: translateY(-10px);
+}
+
+/* ++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+.brochure-grid {
+    display: flex;            /* جعل الصور بجانب بعضها */
+    flex-wrap: nowrap;        /* منع الصور من النزول لسطر جديد */
+    overflow-x: auto;         /* السماح بالتمرير يمينا ويسارا */
+    gap: 20px;                /* مسافة بين الصور */
+    padding: 20px;
+    justify-content: flex-start; /* تبدأ الصور من اليمين (للعربي) */
+}
+
+.brochure-grid img {
+    width: 250px;             /* حجم متوسط للصور */
+    height: auto;
+    flex-shrink: 0;           /* منع الصور من الانضغاط */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    cursor: pointer;
+}
+
+
+
+
+/* تنسيق روابط القائمة الأساسي */
+.nav-links li a {
+    position: relative; /* ضروري لكي يتحرك الخط بالنسبة للنص */
+    text-decoration: none;
+    color: var(--text-color); /* تأكد من استخدام متغير اللون لديك */
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+/* إنشاء الخط السفلي (مخفي في البداية) */
+.nav-links li a::after {
+    content: '';
+    position: absolute;
+    width: 0; /* يبدأ من عرض صفر */
+    height: 2px; /* سمك الخط */
+    bottom: 0;
+    left: 50%; /* يبدأ النمو من المنتصف */
+    background-color: #f39c12; /* لون الخط (برتقالي شمسي) */
+    transition: all 0.3s ease;
+    transform: translateX(-50%);
+}
+
+/* تأثير مرور الماوس: الخط يتمدد */
+.nav-links li a:hover {
+    color: #f39c12; /* يتغير لون النص أيضاً */
+}
+
+.nav-links li a:hover::after {
+    width: 100%; /* يتمدد ليغطي كامل عرض الكلمة */
+}
+
+
+
+
+.about-text {
+    color: var(--text-color);
+}
+
+.about-p {
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+.about-h3 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #f39c12; /* اللون البرتقالي الشمسي */
+    margin-top: 20px;
+    margin-bottom: 15px;
+    border-right: 5px solid #f39c12; /* خط جانبي فخم */
+    padding-right: 15px;
+}
+
+.about-list {
+    font-size: 17px;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px;
+    padding-right: 10px;
+}
+
+
+/* تحويل النقاط اليدوية إلى شكل هندسي جميل */
+.about-list {
+    border-right: 2px solid rgba(243, 156, 18, 0.2);
+    padding-right: 20px;
+    margin-bottom: 25px;
+}
+
+/* تنسيق العناوين الجانبية لتكون ملفتة */
+.about-h3 {
+    color: #f39c12;
+    font-size: 1.5rem;
+    margin-top: 35px;
+    position: relative;
+    display: inline-block;
+}
+
+.about-h3::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background: #f39c12;
+    margin-top: 5px;
+}
+
+
+
+/* إزاحة زر اللغة في الواجهة العربية */
+[dir="rtl"] .lang-btn {
+    margin-right: 00px; /* زد الرقم لزيادة الإزاحة جهة اليمين */
+    margin-left: 00;
+}
+
+/* في الواجهة الإنجليزية (اختياري) */
+[dir="ltr"] .lang-btn {
+    margin-left: 00px;
+    margin-right: 00;
+}
+
+
+/* تنسيقات خاصة بالقائمة في الواجهة الإنجليزية فقط */
+[dir="ltr"] .nav-links {
+    font-family: 'Poppins', sans-serif; /* اختيار خط إنجليزي أنيق */
+    letter-spacing: 0.5px;             /* مسافة بسيطة بين الحروف للفخامة */
+}
+
+[dir="ltr"] .nav-links li a {
+    font-weight: 700;                  /* جعل الخط متوسط السمك */
+    font-size: 15px;
+}
+
+/* تعديل المسافات بين الروابط في الإنجليزية */
+[dir="ltr"] .nav-links li {
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+
+
+
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    align-items: start; /* يمنع تمدد الكروت بشكل غير متساوي */
+}
+
+.product-card {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.prod-img-box {
+    width: 100%;
+    height: 250px; /* توحيد ارتفاع الصور */
+    overflow: hidden;
+    background: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.prod-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* يجعل الصورة تظهر كاملة داخل المربع دون قص */
+    padding: 15px;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.1); /* تأثير تكبير الصورة عند مرور الماوس */
+}

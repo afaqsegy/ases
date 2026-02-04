@@ -707,3 +707,47 @@ html[dir="rtl"] .float-whatsapp {
     margin-left: 5px;
     margin-right: 5px;
 }
+
+
+
+
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    align-items: start; /* يمنع تمدد الكروت بشكل غير متساوي */
+}
+
+.product-card {
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+.prod-img-box {
+    width: 100%;
+    height: 250px; /* توحيد ارتفاع الصور */
+    overflow: hidden;
+    background: #fdfdfd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.prod-img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* يجعل الصورة تظهر كاملة داخل المربع دون قص */
+    padding: 15px;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.1); /* تأثير تكبير الصورة عند مرور الماوس */
+}
