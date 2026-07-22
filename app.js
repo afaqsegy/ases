@@ -6,6 +6,7 @@ const translations = {
         nav_solutions: "حلولنا",
         nav_products: "منتجاتنا",
         nav_gallery: "أعمالنا",
+        nav_video: "فيديو",
         nav_brochure: "بروشورات",
         nav_calc: "حاسبة النظام",
         nav_contact: "تواصل معنا",
