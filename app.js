@@ -51,35 +51,36 @@ const translations = {
         ph_phone: "رقم الهاتف",
         ph_msg: "رسالتك",
         
-        // قسم من نحن (النص الكامل)
-        about_main_desc: `نبذة عن الخبرة المؤسسية: 
-تأسست شركة آفاق لحلول الطاقة الشمسية تُعد شركة آفاق للطاقة الشمسية الامتداد الطبيعي للخبرات الفنية والإدارية التي تأسست من خلال مؤسسة شمس المفرق لأنظمة الطاقة البديلة بالمملكة الأردنية الهاشمية، وهي مؤسسة متخصصة ومرخصة من قبل هيئة تنظيم قطاع الطاقة والمعادن الأردنية، وبدأت نشاطها منذ عام 2008 في مجال تصميم وتوريد وتركيب وتشغيل أنظمة الطاقة الشمسية الكهروضوئية.
+// قسم من نحن (النص الكامل)
+        // لاحظ استخدام علامة ` بدلاً من "
+        about_main_title: "نبذة عن الخبرة المؤسسية.",
+        about_main_desc: `تمثل **شركة آفاق لحلول الطاقة الشمسية (ASES)** امتدادًا طبيعيًا لمسيرة مهنية امتدت لأكثر من خمسة عشر عامًا في قطاع الطاقة المتجددة، حيث تأسست الشركة اعتمادًا على الخبرات الفنية والإدارية المتراكمة لفريقها القيادي، والتي نشأت من خلال **مؤسسة شمس المفرق لأنظمة الطاقة البديلة** في المملكة الأردنية الهاشمية، وهي مؤسسة متخصصة ومرخصة من قبل هيئة تنظيم قطاع الطاقة والمعادن الأردنية، وتمارس نشاطها منذ عام 2008 في مجال تصميم وتوريد وتركيب وتشغيل أنظمة الطاقة الشمسية الكهروضوئية.
 
-وعلى مدار أكثر من خمسة عشر عامًا، شارك فريق الإدارة والخبراء الذين يقودون شركة آفاق في تنفيذ وإدارة مئات المشروعات والدراسات الهندسية في مختلف قطاعات الطاقة المتجددة، مما أكسبهم خبرة عملية واسعة في تصميم وتنفيذ حلول الطاقة للمشروعات السكنية والتجارية والصناعية والزراعية والحكومية.
+وخلال هذه المسيرة، شارك فريق الإدارة والخبراء في تنفيذ وإدارة مئات المشروعات وإعداد الدراسات الفنية والهندسية لمختلف تطبيقات الطاقة الشمسية، مما أسهم في بناء خبرات عملية راسخة في تصميم وتنفيذ حلول الطاقة للمشروعات السكنية والتجارية والصناعية والزراعية والحكومية، وفقًا لأفضل الممارسات والمعايير الدولية.
 
-وقد جاءت شركة آفاق للطاقة الشمسية – جمهورية مصر العربية لتكون امتدادًا لهذه الخبرات المتراكمة، ونقطة انطلاق للتوسع في السوق المصري وأسواق شمال أفريقيا، مستندة إلى نفس الكوادر الإدارية والفنية التي ساهمت في بناء هذا السجل المهني المتميز، مع التركيز على تقديم أحدث حلول الطاقة الشمسية وفقًا للمعايير الدولية وبالشراكة مع كبرى الشركات العالمية.
+وانطلاقًا من هذه الخبرات، تأسست **شركة آفاق لحلول الطاقة الشمسية – جمهورية مصر العربية** لتكون منصة إقليمية للتوسع في السوق المصري وأسواق الشرق الأوسط وشمال أفريقيا، معتمدة على كوادرها الفنية والإدارية ذات الخبرة، وبالشراكة مع نخبة من الشركات العالمية الرائدة في تصنيع تقنيات الطاقة الشمسية، بهدف تقديم حلول متكاملة تجمع بين الجودة العالية والكفاءة الفنية والاستدامة.
 
-وتستند الخبرات المتراكمة لفريق الإدارة إلى سجل مهني يشمل:
+ويستند السجل المهني لفريق الإدارة إلى إنجازات عملية بارزة تشمل:
 
-تنفيذ أكثر من 500 مشروعًا في مجال الطاقة الشمسية للمشروعات الصغيرة والمتوسطة.
-قدرة إجمالية للمشروعات المنفذة تجاوزت 5 ميجاوات.
-إعداد أكثر من 1000 دراسة فنية وهندسية لمشروعات الطاقة الشمسية (On-Grid، Off-Grid، Hybrid).
-تقديم الاستشارات الهندسية للمشروعات الحكومية والتجارية والصناعية والسكنية والزراعية، بما في ذلك المزارع، وآبار المياه، والمساجد، والمنشآت التجارية والصناعية.
+* تنفيذ أكثر من **500 مشروع** للطاقة الشمسية في مختلف القطاعات.
+* تنفيذ مشروعات بإجمالي قدرة مركبة تجاوزت **7 ميجاوات**.
+* إعداد أكثر من **1,000 دراسة فنية وهندسية** لأنظمة الطاقة الشمسية (On-Grid، Off-Grid، Hybrid).
+* تقديم الاستشارات الهندسية للمشروعات الحكومية والتجارية والصناعية والسكنية والزراعية، بما يشمل المزارع، وآبار المياه، والمساجد، والمنشآت التجارية والصناعية.
 
-وتؤمن شركة آفاق بأن هذه الخبرة الممتدة، إلى جانب شراكاتها الاستراتيجية مع الشركات العالمية المصنعة، تمثل أساسًا قويًا لتقديم حلول متكاملة ومستدامة في سوق الطاقة المتجددة داخل جمهورية مصر العربية والمنطقة.
+وتؤمن شركة آفاق بأن الخبرة العملية المتراكمة، إلى جانب شراكاتها الاستراتيجية مع كبرى الشركات العالمية المصنعة، تشكل قاعدة قوية لتقديم حلول طاقة متجددة متكاملة ومستدامة تلبي احتياجات العملاء وتواكب متطلبات التحول نحو الطاقة النظيفة.
 
-وتواصل شركة آفاق للطاقة الشمسية توسيع نطاق أعمالها الإقليمية، حيث تشارك حاليًا في إعداد الدراسات الفنية والمناقشات الخاصة بعدد من مشروعات الطاقة الشمسية الكبرى في المنطقة، وذلك بالتعاون مع شركائها الاستراتيجيين.
+وتواصل الشركة توسيع حضورها الإقليمي من خلال المشاركة في إعداد الدراسات الفنية والتطوير الأولي لعدد من مشروعات الطاقة الشمسية الكبرى بالتعاون مع شركائها الاستراتيجيين.
 
-وفي هذا الإطار، تشارك الشركة حاليًا في الدراسات الفنية والمراحل التمهيدية لمشروعات مقترحة  بالجمهورية العربية السورية، تستهدف تنفيذ محطات طاقة شمسية بقدرات تصل إلى 30 ميجاوات و50 ميجاوات، وذلك في إطار الإجراءات الفنية والتعاقدية الجارية.
+وفي هذا الإطار، تشارك الشركة حاليًا في الدراسات الفنية والمراحل التمهيدية لمشروعات مقترحة في **الجمهورية العربية السورية** بقدرات تصل إلى **30 ميجاوات** و**50 ميجاوات**، وذلك ضمن الإجراءات الفنية والتعاقدية والتنظيمية الجارية.
 
-كما تشارك الشركة في إعداد الدراسات الأولية لمشروع طاقة شمسية مقترح بجمهورية السودان بقدرة مستهدفة تبلغ 200 ميجاوات، وذلك ضمن خطة التوسع في أسواق الشرق الأوسط وشمال أفريقيا.
+كما تساهم الشركة في إعداد الدراسات الأولية لمشروع طاقة شمسية مقترح في **جمهورية السودان** بقدرة مستهدفة تبلغ **200 ميجاوات**، ضمن استراتيجيتها للتوسع في أسواق الشرق الأوسط وشمال أفريقيا.
 
-وتعكس هذه المشروعات – حال استكمال إجراءاتها التعاقدية واعتمادها النهائي – الثقة المتنامية في الخبرات الفنية والإدارية لفريق شركة آفاق، وقدرته على إدارة وتنفيذ مشروعات الطاقة الشمسية على نطاق المرافق (Utility Scale)، بما يعزز مكانة الشركة كشريك موثوق في مشروعات الطاقة المتجددة بالمنطقة.",
+وتمثل هذه المشروعات، عند استكمال إجراءاتها التعاقدية والحصول على الاعتمادات النهائية، دليلًا على تنامي الثقة في الكفاءات الفنية والإدارية لشركة آفاق، وقدرتها على تطوير وإدارة وتنفيذ مشروعات الطاقة الشمسية على مستوى المرافق (Utility-Scale)، بما يعزز مكانتها كشريك موثوق في قطاع الطاقة المتجددة على المستوى الإقليمي.`,
 
         about_exp_title: "خبراتنا.",
         about_exp_list: "• يضم فريقنا خبراء عملوا في مجال الطاقة المتجددة منذ عام 2008.<br>• لدينا شركاء يُعتبرون من أوائل مطوّري مشاريع الطاقة الشمسية حول العالم منذ 1995.<br>• نفذ خبراؤنا وشركاؤنا مشاريع كبرى وعملاقة في عدة دول حول العالم.",
         about_serv_title: "خدماتنا",
-        about_serv_list: "نقدم خدمات شاملة ومتكاملة تشمل:<br>• دراسة وتصميم أنظمة الطاقة البديلة.<br>• توريد وتركيب وتشغيل أنظمة الطاقة الشمسية.<br>• الفحص والاختبار والاعتماد الفني للمشاريع.<br>• الاستشارات الهندسية في جميع نواحي الطاقة البديلة.<br>• حلول توفير الطاقة للمنازل والمزارع والمصانع والمدن والمشاريع الحكومية العملاقة.`,
+        about_serv_list: "نقدم خدمات شاملة ومتكاملة تشمل:<br>• دراسة وتصميم أنظمة الطاقة البديلة.<br>• توريد وتركيب وتشغيل أنظمة الطاقة الشمسية.<br>• الفحص والاختبار والاعتماد الفني للمشاريع.<br>• الاستشارات الهندسية في جميع نواحي الطاقة البديلة.<br>• حلول توفير الطاقة للمنازل والمزارع والمصانع والمدن والمشاريع الحكومية العملاقة.",
         about_fields_title: "مجالات عملنا",
         about_fields_list: "نعمل في جميع أنظمة الطاقة المتجددة:<br>• ON-GRID الأنظمة المرتبطة بالشبكة.<br>• OFF-GRID الأنظمة المنفصلة عن الشبكة.<br>• HYBRID SYSTEMS الأنظمة الهجينة.<br>• ON-TIME SYSTEMS أنظمة التشغيل الفوري.",
         about_ugp_title: "وكالاتنا وشركاؤنا UGP",
@@ -112,7 +113,7 @@ const translations = {
         stat_power: "Installed Capacity (KW)",
         stat_satisfaction: "Customer Satisfaction %",
         title_about: "About Us",
-        about_desc: "AFAQ Solar Energy Solutions (ASES) is a leader in renewable energy in Egypt. We aim to provide smart and sustainable energy solutions.",
+        about_desc: "About Us",
         title_solutions: "Energy Solutions",
         sol_home: "Residential Systems",
         sol_home_desc: "Eliminate electricity bills and achieve independence.",
@@ -146,7 +147,30 @@ const translations = {
         ph_msg: "Your Message",
 
         // About Us Section (Professional Translation)
-        about_main_desc: "AFAQ Solar Energy Solutions (ASES) was established in Alexandria, Egypt in 2025, to become a leading company in the renewable energy sector. The company relies on advanced engineering expertise and a specialized team with over 17 years of experience in designing, implementing, and operating alternative energy systems.",
+        about_main_desc: `# Corporate Experience
+
+**Afaq Solar Energy Solutions (ASES)** represents the continuation of more than fifteen years of professional experience in the renewable energy sector. The company builds upon the extensive technical and managerial expertise of its leadership team, which originated through **Shams Al-Mafraq Alternative Energy Systems** in the Hashemite Kingdom of Jordan—a specialized company licensed by the Jordanian Energy and Minerals Regulatory Commission (EMRC). Since 2008, the organization has specialized in the design, supply, installation, commissioning, and operation of photovoltaic (PV) solar energy systems.
+
+Throughout this journey, the company's management team and technical experts have successfully delivered and managed hundreds of renewable energy projects while preparing a wide range of technical and engineering studies. This experience has established a strong foundation in providing integrated solar energy solutions for residential, commercial, industrial, agricultural, and governmental sectors, in accordance with international engineering standards and industry best practices.
+
+Building on this proven track record, **Afaq Solar Energy Solutions – Arab Republic of Egypt** was established as a regional platform to expand into the Egyptian market and the wider Middle East and North Africa (MENA) region. The company is supported by experienced management and engineering professionals and strategic partnerships with leading global manufacturers, enabling it to deliver integrated, high-quality, and sustainable solar energy solutions.
+
+The management team's professional achievements include:
+
+* Successful execution of more than **500 solar energy projects** across multiple sectors.
+* Delivery of projects with a combined installed capacity exceeding More Than **7 MW**.
+* Preparation of more than **1,000 technical and engineering studies** for **On-Grid, Off-Grid, and Hybrid** PV systems.
+* Provision of engineering consultancy services for government, commercial, industrial, residential, and agricultural projects, including farms, water pumping stations, mosques, commercial facilities, and industrial plants.
+
+Afaq believes that its accumulated practical experience, combined with strategic partnerships with leading international manufacturers, provides a solid foundation for delivering integrated, reliable, and sustainable renewable energy solutions that support the transition toward clean energy across Egypt and the wider region.
+
+The company continues to strengthen its regional presence by participating in the technical development and preliminary planning of several large-scale solar energy projects in cooperation with its strategic partners.
+
+As part of these regional initiatives, Afaq is currently involved in the technical studies and preliminary development phases of proposed utility-scale solar projects in the **Syrian Arab Republic**, targeting capacities of **30 MW** and **50 MW**, subject to the completion of the required technical, contractual, and regulatory procedures.
+
+In addition, the company is participating in the preliminary feasibility studies of a proposed **200 MW** solar power project in the **Republic of Sudan**, as part of its strategic expansion across the Middle East and North Africa.
+
+Upon completion of the contractual processes and receipt of the necessary approvals, these projects will further demonstrate the growing confidence in Afaq's technical and managerial capabilities and reinforce its position as a trusted partner in the development, management, and delivery of **utility-scale renewable energy projects** throughout the region.`,
         about_exp_title: "Our Expertise.",
         about_exp_list: "• Our team includes experts who have worked in renewable energy since 2008.<br>• We have partners recognized as pioneer developers of solar energy projects worldwide since 1995.<br>• Our experts and partners have executed mega-projects in various countries globally.",
         about_serv_title: "Our Services",
@@ -374,7 +398,7 @@ document.addEventListener('DOMContentLoaded', () => {
     
     navItems.forEach((item, index) => {
         item.style.opacity = '0';
-        item.style.transform = '照顾 translateY(-10px)';
+        item.style.transform = 'translateY(-10px)';
         
         setTimeout(() => {
             item.style.transition = 'all 0.5s ease';
@@ -402,28 +426,6 @@ window.addEventListener('scroll', () => {
 
 
 
-function filterProducts(category) {
-    const cards = document.querySelectorAll('.product-card');
-    const btns = document.querySelectorAll('.filter-btn');
-
-    // تغيير حالة الزر النشط
-    btns.forEach(btn => {
-        btn.classList.remove('active');
-        if(btn.getAttribute('onclick').includes(category)) {
-            btn.classList.add('active');
-        }
-    });
-
-    // إخفاء وإظهار المنتجات مع حركة انسيابية
-    cards.forEach(card => {
-        card.style.display = 'none'; // إخفاء الكل أولاً
-        if (category === 'all' || card.getAttribute('data-category') === category) {
-            card.style.display = 'block'; // إظهار المختار فقط
-            card.style.animation = 'fadeIn 0.5s ease forwards';
-        }
-    });
-}
-
 
 
 function filterProducts(category) {
@@ -445,7 +447,3 @@ function filterProducts(category) {
         }
     });
 }
-
-
-
-

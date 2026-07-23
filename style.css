@@ -751,3 +751,39 @@ html[dir="rtl"] .float-whatsapp {
 .product-card:hover img {
     transform: scale(1.1); /* تأثير تكبير الصورة عند مرور الماوس */
 }
+
+
+.scrollable-text-box {
+    max-height: 300px; /* يمكنك تعديل الرقم لزيادة أو تقليل طول المربع */
+    overflow-y: auto; /* هذا الأمر هو الذي يظهر شريط التمرير العمودي */
+    padding: 15px; /* مسافة داخلية لجمالية النص */
+    border: 1px solid #e2e8f0; /* إطار خفيف حول المربع - اختياري */
+    border-radius: 8px; /* حواف دائرية للمربع - اختياري */
+    background-color: #f8fafc; /* لون خلفية خفيف - اختياري */
+    line-height: 1.8; /* تباعد الأسطر لتسهيل القراءة */
+white-space: pre-line; /* هذا السطر مهم جداً لكي تظهر الفقرات منفصلة كما كتبتها في الجافاسكريبت */
+}
+
+/* تنسيق شريط التمرير (اختياري لجمالية الموقع) */
+.scrollable-text-box::-webkit-scrollbar {
+    width: 6px;
+}
+.scrollable-text-box::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+    border-radius: 8px;
+}
+.scrollable-text-box::-webkit-scrollbar-thumb {
+    background: #888; 
+    border-radius: 8px;
+}
+.scrollable-text-box::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+}
+
+
+/* تنسيق صندوق النص القابل للتمرير في الوضع الليلي */
+body.dark-theme .scrollable-text-box {
+    background-color: #1e293b; /* لون خلفية داكن (كحلي غامق) يريح العين */
+    color: #f8fafc; /* لون خط أبيض ساطع ليكون مقروءاً بوضوح */
+    border-color: #334155; /* لون الإطار ليتناسب مع الخلفية الداكنة */
+}
